@@ -48,7 +48,7 @@ const updateRecurringExpenses = async () => {
           }
           break;
         default:
-          break;
+          break; // For One-Time
       }
 
       if (shouldUpdate) {

@@ -1,7 +1,7 @@
 const axios = require('axios');
 require('dotenv').config(); 
 const API_ENDPOINT = process.env.API_ENDPOINT;
-const VALID_FREQUENCIES = ['Daily', 'Weekly', 'Monthly' , 'Yearly']; // Example, adjust according to your needs
+const VALID_FREQUENCIES = ['One-Time', 'Daily', 'Weekly', 'Monthly' , 'Yearly']; // Used as a Validator
 const getConfig = require('../utils/api-config');
 
 
@@ -19,6 +19,7 @@ const createExpense = async (req, res) => {
         };
         const POST_CONFIG = getConfig();
         const instance = axios.create(POST_CONFIG);
+        // Using a custom Axios Instance
         const response = await instance.post(API_ENDPOINT, { data });
         res.status(201).send(response.data);
     } catch (error) {
@@ -28,8 +29,8 @@ const createExpense = async (req, res) => {
 
 const getAllExpenses = async (req, res) => {
     try {
-        console.log("In ALL Expenses");
         const response = await axios.get(API_ENDPOINT);
+        // Fetch all vals
         res.status(200).send(response.data);
     } catch (error) {
         res.status(500).send(error.message);
@@ -39,6 +40,7 @@ const getAllExpenses = async (req, res) => {
 const updateExpense = async (req, res) => {
     try {
         const ogdata = await axios.get(`${API_ENDPOINT}${req.params.id}`);
+        // Using base data as a Baseline
         const data = {
             Date: req.body.Date || ogdata.data.data.attributes.Date || new Date(),
             Amount: req.body.Amount || ogdata.data.data.attributes.Amount,
@@ -48,7 +50,6 @@ const updateExpense = async (req, res) => {
         };
         const PUT_CONFIG = getConfig();
         const instance = axios.create(PUT_CONFIG);
-        console.log(PUT_CONFIG, data);
         const response = await instance.put(`${API_ENDPOINT}${req.params.id}`, { data });
         res.status(200).send(response.data);
     } catch (error) {
@@ -59,8 +60,8 @@ const updateExpense = async (req, res) => {
 const deleteExpense = async (req, res) => {
     console.log(req.params);
     try {
-        const { id } = req.params;
-        console.log(`${API_ENDPOINT}${id}`);
+        const { id } = req.body;
+        // Delete the data with the ID in req body
         const response = await axios.delete(`${API_ENDPOINT}${id}`);
         res.status(200).send(response.data);
     } catch (error) {

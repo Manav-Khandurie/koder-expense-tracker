@@ -2,7 +2,6 @@
 	"info": {
 		"_postman_id": "1c71318f-2364-460a-b5bd-a366b0d5e07e",
 		"name": "Koder-express-api",
-		"description": "StartFragmentIn this task, your objective is to develop an Express server capable of managing expenses  \nwithin the expense table.EndFragment",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26811368",
 		"_collection_link": "https://www.postman.com/orbital-module-engineer-11493836/workspace/postman-api-fundamentals-student-expert/collection/26811368-1c71318f-2364-460a-b5bd-a366b0d5e07e?action=share&source=collection_link&creator=26811368"
@@ -24,7 +23,104 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "expenses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/expenses",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"expenses"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5882"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16fa-VclFmkWwOqk4YTtNiMTsAEUu4Pw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 May 2024 21:12:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 3,\n            \"attributes\": {\n                \"Date\": \"2024-05-01\",\n                \"Amount\": 1000000,\n                \"Description\": \"Maintenance\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 300000,\n                \"createdAt\": \"2024-05-24T11:19:42.770Z\",\n                \"updatedAt\": \"2024-05-26T18:42:01.898Z\",\n                \"publishedAt\": \"2024-05-24T11:19:44.202Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"attributes\": {\n                \"Date\": \"2024-05-30\",\n                \"Amount\": 12000,\n                \"Description\": \"Pizza Party\",\n                \"Frequency\": \"Weekly\",\n                \"Base\": 1000,\n                \"createdAt\": \"2024-05-25T17:22:29.476Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.244Z\",\n                \"publishedAt\": \"2024-05-24T11:20:08.719Z\"\n            }\n        },\n        {\n            \"id\": 6,\n            \"attributes\": {\n                \"Date\": \"2024-05-30\",\n                \"Amount\": 1,\n                \"Description\": \"Pizza Party\",\n                \"Frequency\": \"Weekly\",\n                \"Base\": 1000,\n                \"createdAt\": \"2024-05-25T17:23:03.224Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.473Z\",\n                \"publishedAt\": \"2024-05-24T11:20:08.719Z\"\n            }\n        },\n        {\n            \"id\": 18,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": 35000,\n                \"Description\": \"Some Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 10000,\n                \"createdAt\": \"2024-05-25T22:21:45.314Z\",\n                \"updatedAt\": \"2024-05-26T21:01:01.332Z\",\n                \"publishedAt\": \"2024-05-25T22:21:45.312Z\"\n            }\n        },\n        {\n            \"id\": 25,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": 35000,\n                \"Description\": \"Some Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 10000,\n                \"createdAt\": \"2024-05-25T22:31:43.565Z\",\n                \"updatedAt\": \"2024-05-26T21:01:01.538Z\",\n                \"publishedAt\": \"2024-05-25T22:31:43.563Z\"\n            }\n        },\n        {\n            \"id\": 26,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-25T22:33:48.832Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.404Z\",\n                \"publishedAt\": \"2024-05-25T22:33:48.830Z\"\n            }\n        },\n        {\n            \"id\": 27,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-25T22:38:18.683Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.438Z\",\n                \"publishedAt\": \"2024-05-25T22:38:18.682Z\"\n            }\n        },\n        {\n            \"id\": 28,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-25T22:40:17.214Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.691Z\",\n                \"publishedAt\": \"2024-05-25T22:40:17.212Z\"\n            }\n        },\n        {\n            \"id\": 29,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-25T22:41:51.223Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.262Z\",\n                \"publishedAt\": \"2024-05-25T22:41:51.221Z\"\n            }\n        },\n        {\n            \"id\": 30,\n            \"attributes\": {\n                \"Date\": \"2024-05-01\",\n                \"Amount\": 100,\n                \"Description\": \"Groceries\",\n                \"Frequency\": \"Monthly\",\n                \"Base\": 100,\n                \"createdAt\": \"2024-05-25T22:45:22.510Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.279Z\",\n                \"publishedAt\": \"2024-05-25T22:45:22.508Z\"\n            }\n        },\n        {\n            \"id\": 31,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-26T12:23:33.054Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.227Z\",\n                \"publishedAt\": \"2024-05-26T12:23:33.051Z\"\n            }\n        },\n        {\n            \"id\": 32,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-26T12:27:03.458Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.350Z\",\n                \"publishedAt\": \"2024-05-26T12:27:03.457Z\"\n            }\n        },\n        {\n            \"id\": 33,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-26T12:27:11.273Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.208Z\",\n                \"publishedAt\": \"2024-05-26T12:27:11.271Z\"\n            }\n        },\n        {\n            \"id\": 34,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": 11253,\n                \"Description\": \"MY Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 1428,\n                \"createdAt\": \"2024-05-26T12:36:37.785Z\",\n                \"updatedAt\": \"2024-05-26T21:01:01.558Z\",\n                \"publishedAt\": \"2024-05-26T12:36:37.783Z\"\n            }\n        },\n        {\n            \"id\": 35,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 6969,\n                \"Description\": \"MY Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 1428,\n                \"createdAt\": \"2024-05-26T12:38:21.397Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.538Z\",\n                \"publishedAt\": \"2024-05-26T12:38:21.395Z\"\n            }\n        },\n        {\n            \"id\": 36,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-26T12:41:12.992Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.169Z\",\n                \"publishedAt\": \"2024-05-26T12:41:12.989Z\"\n            }\n        },\n        {\n            \"id\": 37,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-26T12:42:41.452Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.421Z\",\n                \"publishedAt\": \"2024-05-26T12:42:41.450Z\"\n            }\n        },\n        {\n            \"id\": 38,\n            \"attributes\": {\n                \"Date\": null,\n                \"Amount\": null,\n                \"Description\": null,\n                \"Frequency\": null,\n                \"Base\": null,\n                \"createdAt\": \"2024-05-26T12:44:12.858Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.314Z\",\n                \"publishedAt\": \"2024-05-26T12:44:12.856Z\"\n            }\n        },\n        {\n            \"id\": 39,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 1001,\n                \"Description\": \"Updated Description V2\",\n                \"Frequency\": \"Monthly\",\n                \"Base\": 9009,\n                \"createdAt\": \"2024-05-26T12:49:06.461Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.189Z\",\n                \"publishedAt\": \"2024-05-26T12:49:06.459Z\"\n            }\n        },\n        {\n            \"id\": 40,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 6969,\n                \"Description\": \"MY Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 1428,\n                \"createdAt\": \"2024-05-26T12:50:54.190Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.297Z\",\n                \"publishedAt\": \"2024-05-26T12:50:54.187Z\"\n            }\n        },\n        {\n            \"id\": 41,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 6969,\n                \"Description\": \"MY Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 1428,\n                \"createdAt\": \"2024-05-26T12:53:01.763Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.386Z\",\n                \"publishedAt\": \"2024-05-26T12:53:01.761Z\"\n            }\n        },\n        {\n            \"id\": 42,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 26000,\n                \"Description\": \"Some Description v6\",\n                \"Frequency\": \"Daily\",\n                \"Base\": 10000,\n                \"createdAt\": \"2024-05-26T12:53:19.011Z\",\n                \"updatedAt\": \"2024-05-26T21:01:01.577Z\",\n                \"publishedAt\": \"2024-05-26T12:53:19.010Z\"\n            }\n        },\n        {\n            \"id\": 43,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 16969,\n                \"Description\": \"MY Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 1428,\n                \"createdAt\": \"2024-05-26T15:59:20.432Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.333Z\",\n                \"publishedAt\": \"2024-05-26T15:59:20.430Z\"\n            }\n        },\n        {\n            \"id\": 44,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 16969,\n                \"Description\": \"MY Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 1428,\n                \"createdAt\": \"2024-05-26T16:01:06.245Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.524Z\",\n                \"publishedAt\": \"2024-05-26T16:01:06.244Z\"\n            }\n        },\n        {\n            \"id\": 45,\n            \"attributes\": {\n                \"Date\": \"2024-05-26\",\n                \"Amount\": 6000,\n                \"Description\": \"Some Description\",\n                \"Frequency\": \"Yearly\",\n                \"Base\": 10000,\n                \"createdAt\": \"2024-05-26T16:03:48.003Z\",\n                \"updatedAt\": \"2024-05-26T18:42:02.457Z\",\n                \"publishedAt\": \"2024-05-26T16:03:48.002Z\"\n            }\n        }\n    ],\n    \"meta\": {\n        \"pagination\": {\n            \"page\": 1,\n            \"pageSize\": 25,\n            \"pageCount\": 2,\n            \"total\": 31\n        }\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "createExpense",
@@ -51,15 +147,130 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "createExpense",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Amount\": 99999,\r\n    \"Description\" : \"Some Description\",\r\n    \"Frequency\" : \"Yearly\",\r\n    \"Base\" : 10000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/expenses",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"expenses"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "264"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"108-VGs9QE59t5aS0L7KeGI1VMBTDLg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 May 2024 21:16:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 53,\n        \"attributes\": {\n            \"Date\": \"2024-05-26\",\n            \"Amount\": 99999,\n            \"Description\": \"Some Description\",\n            \"Frequency\": \"Yearly\",\n            \"Base\": 10000,\n            \"createdAt\": \"2024-05-26T21:16:52.174Z\",\n            \"updatedAt\": \"2024-05-26T21:16:52.174Z\",\n            \"publishedAt\": \"2024-05-26T21:16:52.173Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				}
+			]
 		},
 		{
 			"name": "deleteExpense",
 			"request": {
 				"method": "DELETE",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 51\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:3001/expenses/?id=32",
+					"raw": "localhost:3001/expenses/",
 					"host": [
 						"localhost"
 					],
@@ -67,16 +278,117 @@
 					"path": [
 						"expenses",
 						""
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "32"
-						}
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "deleteExpense",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 51\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/expenses/",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"expenses",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "264"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"108-9s0Yn/arigs80MZ4vhp79/sm4ds\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 May 2024 21:40:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 51,\n        \"attributes\": {\n            \"Date\": \"2024-05-26\",\n            \"Amount\": 99999,\n            \"Description\": \"Some Description\",\n            \"Frequency\": \"Yearly\",\n            \"Base\": 10000,\n            \"createdAt\": \"2024-05-26T20:22:22.510Z\",\n            \"updatedAt\": \"2024-05-26T20:22:22.510Z\",\n            \"publishedAt\": \"2024-05-26T20:22:22.509Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				}
+			]
 		},
 		{
 			"name": "putExpense",
@@ -85,7 +397,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Amount\": 6000,\r\n    \"Description\" : \"Some Description v6\",\r\n    \"Frequency\" : \"Daily\",\r\n    \"Base\" : 10000\r\n}\r\n",
+					"raw": "{\r\n    \"Amount\": 6000,\r\n    \"Description\" : \"Some Description v6\",\r\n    \"Frequency\" : \"Monthly\",\r\n    \"Base\" : 10000\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -104,7 +416,114 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "patchExpense",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Amount\": 6000,\r\n    \"Description\" : \"Some Description v6\",\r\n    \"Frequency\" : \"Monthly\",\r\n    \"Base\" : 10000\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/expenses/42",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"expenses",
+								"42"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "267"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10b-9aMmEtU7iQKQiolcfqhTkGKUVNo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 May 2024 21:17:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 42,\n        \"attributes\": {\n            \"Date\": \"2024-05-26\",\n            \"Amount\": 6000,\n            \"Description\": \"Some Description v6\",\n            \"Frequency\": \"Monthly\",\n            \"Base\": 10000,\n            \"createdAt\": \"2024-05-26T12:53:19.011Z\",\n            \"updatedAt\": \"2024-05-26T21:17:28.051Z\",\n            \"publishedAt\": \"2024-05-26T12:53:19.010Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				}
+			]
 		}
 	]
 }

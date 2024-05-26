@@ -10,5 +10,6 @@ function getConfig(){
     }
     return config;
 }
+/* Exports the required Skeleton config of Axios */
 
 module.exports = getConfig;

@@ -19,7 +19,7 @@ daily. This update involves incrementing the amount based on the specified frequ
 2. Clone your forked repository
 
 ```sh
- git clone https://github.com/<your_github_username>/Rate-Limiter-Service-POC-AWS.git
+ git clone https://github.com/<your_github_username>/koder-expense-tracker.git
 ```
 3. Creating the .env File <br>
     Navigate to the root directory of the project.<br>

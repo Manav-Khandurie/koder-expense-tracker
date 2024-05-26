@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "1c71318f-2364-460a-b5bd-a366b0d5e07e",
+		"name": "Koder-express-api",
+		"description": "StartFragmentIn this task, your objective is to develop an Express server capable of managing expenses  \nwithin the expense table.EndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26811368",
+		"_collection_link": "https://www.postman.com/orbital-module-engineer-11493836/workspace/postman-api-fundamentals-student-expert/collection/26811368-1c71318f-2364-460a-b5bd-a366b0d5e07e?action=share&source=collection_link&creator=26811368"
+	},
+	"item": [
+		{
+			"name": "getExpenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/expenses",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createExpense",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Amount\": 99999,\r\n    \"Description\" : \"Some Description\",\r\n    \"Frequency\" : \"Yearly\",\r\n    \"Base\" : 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/expenses",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteExpense",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/expenses/?id=32",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"expenses",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "32"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putExpense",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Amount\": 6000,\r\n    \"Description\" : \"Some Description v6\",\r\n    \"Frequency\" : \"Daily\",\r\n    \"Base\" : 10000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/expenses/42",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"expenses",
+						"42"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,13 +1,15 @@
 const axios = require('axios');
+const getDate = require('./today-date');
+
 
 // Sample data to be posted
 let data = {
-  Amount: 5000,
-  Description: "Some Description",
+  Amount: 6969,
+  Date : new Date(),
+  Description: "MY Description",
   Frequency: "Yearly",
-  Base: 10000
+  Base: 1428
 };
-console.log(JSON.stringify(data))
 let config = {
   method: 'post',
   maxBodyLength: Infinity,
@@ -15,16 +17,29 @@ let config = {
   headers: {
     'Content-Type': 'application/json'
   },
-  data: {
-    data
-    }
+  data:  {data}
 };
 
-console.log(config);
-axios.request(config)
-  .then((response) => {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch((error) => {
-    console.log('error');
+async function fun(){
+  console.log(data);
+  try {
+  
+  const instance= axios.create({
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: 'http://strapi.koders.in/api/expenses/',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data:  {data}
   });
+  console.log(instance)
+  const response = await instance.post('http://strapi.koders.in/api/expenses/');
+  console.log(response.data.attributes);
+  }
+  catch(error){
+    console.log(error);
+  }
+}
+
+fun();

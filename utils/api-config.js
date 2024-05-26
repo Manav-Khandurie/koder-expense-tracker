@@ -4,12 +4,12 @@ let data = '';
 function getConfig(){
     const config = {
         maxBodyLength: Infinity,
-        url : process.env.API_,
+        url : process.env.API_ENDPOINT,
         headers: 
         {
             'Content-Type': 'application/json',
         },
-        data: data
+        data: ''
     }
     return config;
 }

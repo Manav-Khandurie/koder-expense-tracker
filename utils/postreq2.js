@@ -3,7 +3,7 @@ const getDate = require('./today-date');
 
 // Sample data to be posted
 let data = {
-  Amount: 6969,
+  Amount: 16969,
   Date: new Date(),
   Description: "MY Description",
   Frequency: "Yearly",
@@ -23,7 +23,7 @@ async function fun() {
   try {
     // Create an instance with default config
     const instance = axios.create(config);
-
+    console.log(config)
     // Make the POST request using the instance
     const response = await instance.post('/', { data });
     console.log(response.data.data.attributes);

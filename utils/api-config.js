@@ -1,15 +1,12 @@
 require('dotenv').config();
 
-let data = '';
 function getConfig(){
     const config = {
         maxBodyLength: Infinity,
-        url : process.env.API_ENDPOINT,
-        headers: 
-        {
-            'Content-Type': 'application/json',
-        },
-        data: ''
+        baseURL: process.env.API_ENDPOINT,
+        headers: {
+          'Content-Type': 'application/json'
+        }
     }
     return config;
 }
